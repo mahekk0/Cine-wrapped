@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineWrapped</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <!-- HERO -->
+
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <h1>CineWrapped</h1>
+
+            <p>
+                Your Personal Movie Journey Through
+                1,000+ Films
+            </p>
+
+        </div>
+
+    </header>
+
+    <!-- STATS -->
+
+    <section class="stats-grid">
+
+        <div class="card">
+            <h2 id="moviesWatched">0</h2>
+            <p>Movies Watched</p>
+        </div>
+
+        <div class="card">
+            <h2 id="moviesRated">0</h2>
+            <p>Movies Rated</p>
+        </div>
+
+        <div class="card">
+            <h2 id="averageRating">0</h2>
+            <p>Average Rating</p>
+        </div>
+
+        <div class="card">
+            <h2 id="favoriteDecade">--</h2>
+            <p>Favorite Decade</p>
+        </div>
+
+        <div class="card">
+            <h2 id="rewatches">0</h2>
+            <p>Rewatches</p>
+        </div>
+
+        <div class="card">
+            <h2 id="personality">--</h2>
+            <p>Movie Personality</p>
+        </div>
+
+        <div class="card">
+            <h2 id="mostActiveYear">--</h2>
+            <p>Most Active Year</p>
+        </div>
+
+        <div class="card">
+            <h2 id="mostActiveMonth">--</h2>
+            <p>Most Active Month</p>
+        </div>
+
+        <div class="card">
+            <h2 id="longestStreak">--</h2>
+            <p>Longest Watch Streak</p>
+        </div>
+
+    </section>
+
+    <!-- WRAPPED SECTION -->
+
+    <section class="wrapped-section">
+
+        <h2>Your Movie Wrapped</h2>
+
+        <div class="wrapped-card">
+
+            <h3 id="wrappedPersonality">
+                Loading...
+            </h3>
+
+            <p id="wrappedDescription">
+                Analyzing your cinematic journey...
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- CHARTS -->
+
+    <section class="chart-container">
+
+        <div class="chart-card">
+            <h2>Rating Distribution</h2>
+            <canvas id="ratingChart"></canvas>
+        </div>
+
+        <div class="chart-card">
+            <h2>Movies By Year</h2>
+            <canvas id="yearChart"></canvas>
+        </div>
+
+    </section>
+
+    <section class="chart-container">
+
+        <div class="chart-card full-width">
+            <h2>Monthly Watch Activity</h2>
+            <canvas id="monthChart"></canvas>
+        </div>
+
+    </section>
+
+    <!-- LISTS -->
+
+    <section class="lists-container">
+
+        <div class="list-card">
+
+            <h2>🏆 Top Rated Movies</h2>
+
+            <ul id="topMovies"></ul>
+
+        </div>
+
+        <div class="list-card">
+
+            <h2>🎬 Recently Watched</h2>
+
+            <ul id="recentMovies"></ul>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            Built using Letterboxd Export Data
+        </p>
+
+        <p>
+            CineWrapped © 2026
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
