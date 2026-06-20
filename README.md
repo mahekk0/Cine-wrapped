@@ -1,4 +1,5 @@
 # 🎬 CineWrapped
+🌐 Live Demo - https://mahekk0.github.io/Cine-wrapped/
 
 A data-driven movie analytics platform that transforms raw Letterboxd export data into an interactive personal cinema dashboard.
 
